@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+Описание проекта EasyToDo
+EasyToDo — это простое и удобное приложение для управления задачами, созданное с использованием React , TypeScript , Tailwind CSS и @testing-library/react . Приложение позволяет пользователям создавать, просматривать, отмечать выполненные задачи и удалять их по мере необходимости.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Демо: Ссылка 👉👉👉 https://aay92.github.io/EasyToDo/
 
-Currently, two official plugins are available:
+Функциональность
+- Добавление задач : Пользователи могут добавлять новые задачи через поле ввода.
+- Отметка выполненных задач : Каждая задача может быть помечена как выполненная с помощью чекбокса.
+- Удаление задач : Возможность удалить конкретную задачу.
+- Фильтрация задач : Разделение задач на "Все", "Активные" (не завершенные) и "Завершенные".
+- Очистка завершенных задач : Пользователи могут быстро удалить все завершенные задачи.
+- Подсчет активных задач : В реальном времени отображается количество оставшихся задач.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Технологии
+Проект реализован с использованием следующих технологий:
+Frontend :
+- React : Библиотека JavaScript для создания пользовательских интерфейсов.
+- TypeScript : Статически типизированный язык программирования, основанный на JavaScript.
+- Tailwind CSS : Утилитарный фреймворк CSS для быстрой верстки.
+@testing-library/react : Библиотека для тестирования React-компонентов.
+- Jest : Фреймворк для написания unit-тестов.
+Другие инструменты :
+- Vite : Инструмент для быстрой сборки проекта.
+- ESLint : Для проверки кода на соответствие стандартам.
+- Prettier : Для автоматического форматирования кода.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
