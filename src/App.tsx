@@ -88,8 +88,18 @@ const App: React.FC = () => {
           </button>
         </div>
       </div>
-      <BottonLine color="bg-toDoItemBG" sizeWidth={590} z={20} />
-      <BottonLine color="bg-toDoItemBG" sizeWidth={580} z={10} />
+      <BottonLine
+        color="bg-toDoListBG"
+        sizeWidth={590}
+        z={20}
+        bgShadow="bg-black"
+      />
+      <BottonLine
+        color="bg-toDoListBG"
+        sizeWidth={580}
+        z={10}
+        bgShadow="bg-black"
+      />
     </div>
   );
 };

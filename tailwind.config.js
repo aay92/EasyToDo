@@ -14,6 +14,9 @@ module.exports = {
         toDoItemBG: "#ffffff",
         textToDoList: "#414141",
       },
+      boxShadow: {
+        "bottom-custom": (color) => `0px 4px 6px ${color}`, // Тень вниз с динамическим цветом
+      },
     },
   },
   plugins: [],
