@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainGrayBG: #242424;
+  --textPlaceholder: #e7e7e7;
+  --shadowElemenrgb: hwb(0 52% 48%);
+}
+
+input::placeholder {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 25px;
+  color: var(--textPlaceholder);
+}
+
+.shadowElement {
+  box-shadow: 1px 5px 3px -5px var(--shadowElemenrgb),
+    -1px 5px 4px -5px var(--shadowElemenrgb),
+    1px 1px 10px -5px var(--shadowElemenrgb);
+}
